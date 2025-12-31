@@ -1,4 +1,17 @@
 package service;
 
-public class StudentService {
+import model.Student;
+import java.util.List;
+
+public interface StudentService {
+
+    void addStudent(Student student);
+
+    Student getStudentById(int id);
+
+    List<Student> getAllStudents();
+
+    void updateStudent(Student student);
+
+    void deleteStudent(int id);
 }
